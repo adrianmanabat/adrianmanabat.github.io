@@ -1,0 +1,661 @@
+/*  ********************************************   */
+/*          Theme Name:       CSS                  */
+/*          Description:                           */
+/*          Author: Adrian Manabat                 */     
+/*          Tags: Website, BACAS                   */
+/*  ********************************************   */
+
+/*  ******************************  */
+/*  -+-+-+-Table of Contents-+-+-+- */
+/*  1. Global Stye                  */
+/*  3. Navigation                   */
+/*  2. Class Calls                  */
+/*  3. Header Style                 */
+/*  4. Body Style                   */
+/*  4. Home Style                   */
+/*  5. Footer Style                 */
+/*  5. Misc                         */
+/*  5. Media Querries               */
+/*  5. Extras                       */
+/*  ******************************* */
+
+
+/* Fonts */
+
+@import url(//fonts.googleapis.com/css?family=Roboto:400,500,700,100,300);/* font-family: 'Roboto', sans-serif; */
+
+/* ***************************** */ 
+/*          Global Style         */
+/* ***************************** */
+
+/* Sets Container to 100% Width */
+
+html * {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.row {
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+/* Removes Dotted Border on Elements in Mozilla */
+button::-moz-focus-inner, select::-moz-focus-inner, a::-moz-focus-inner {
+  border: 0 !important;
+  outline:none !important;
+}
+
+textarea:focus, input:focus, button:focus, select:focus, a:focus, button:active, select:active, a:active {
+    outline: none !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+}
+
+/* ***************************** */ 
+/*          Navigation           */
+/* ***************************** */
+
+/* Navigation Global */
+a, button, select {
+  cursor: pointer;
+}
+
+  a:hover, a:focus, button:hover, .light:hover, .dark:hover, select:hover{
+    text-decoration:none !important;
+    opacity:.85;
+    cursor: pointer;
+  }
+
+  button:active {
+    opacity:1;
+  }
+
+/* ***************************** */ 
+/*          Class Calls          */
+/* ***************************** */
+
+/* Hides Element */
+.show-none {
+  display:none !important;
+}
+
+/* Removes Padding */
+.rm-padding {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+/* Sets Max width to 1064px */
+.page-wrap {
+  max-width:1170px;
+  margin:0 auto !important;
+}
+
+/* Align Left */
+.left {
+  text-align:left;
+}
+
+/* Align Center */
+.center {
+  text-align:center;
+}
+
+/* Align Left */
+.right {
+  text-align:right;
+}
+
+/* ***************************** */ 
+/*         Header Style          */
+/* ***************************** */
+
+#mainNav nav {
+  background-color: rgba(255, 255, 255, .9) !important;
+}
+  #mainNav nav .navbar-right li a {
+    padding: 40px 16px !important;
+    font-size: 20px;
+    color: #777;
+    font-weight: 100;
+  }
+  #mainNav .container-fluid {
+    padding: 0 15px !important;
+  } 
+
+.navbar-brand {
+  height: auto !important;
+  padding: 11px 15px;
+}
+
+.navbar-brand p {
+  color: #43494e;
+  font-size: 12px;
+  margin: -10px 0 0 5px;
+  font-weight: 400;
+}
+  .navbar-brand p span {
+    font-weight: 600;
+    color: #3cb2e4;
+    text-transform: uppercase;
+  }
+
+#mainNav .container-fluid {
+  max-width: 1170px;
+}
+
+#bottomNav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #2399DA !important;
+  background-color: rgba(39, 170, 225, .9) !important;
+  -webkit-transition: .2s ease-in-out;
+  -moz-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+  #bottomNav p {
+    text-align: right;
+    height: auto;
+    margin-bottom: 0;
+    padding: 5px 0;
+  }
+  #bottomNav a {
+    color: rgba(255,255,255,.9);
+    background: #1F7CA6;
+    padding: 8px 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  #bottomNav select {
+    margin-left: 15px;
+    height: 30px;
+    border: 1px solid #1F7CA6;
+    border-right: #1F7CA6 solid 15px;
+    margin-bottom: 0;
+    background-color: white;
+  }
+
+
+/* ***************************** */ 
+/*          Body Style           */
+/* ***************************** */
+
+#profile {
+  margin-top: 150px;
+  padding: 40px 0;
+}
+/* Profile */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profilePicture {
+  border: 1px solid #E7E7E7;
+  border-radius: 5px;
+  max-width: 200px;
+  margin: 10px 0;
+} 
+  .profilePicture img {
+    border: 10px solid #FAFAFA;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+  }
+
+h2 {
+  text-align: center;
+  padding: 10px;
+  background: #00ABE5;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h4 {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  color: #00ABE5;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  background-color: white;
+  font-weight: 400;
+}
+
+ul {
+  margin-left:0;
+  padding-left:0;
+}
+
+ul li {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.options i {
+  min-width: 30px;
+}
+.options a {
+  padding: 10px 5px;
+  color: #8b939e;
+  outline: 0;
+  line-height: 3;
+  font-weight: 300;
+}
+  .options a:hover, .options a:focus, .options a:active {
+    color: #2399DA;
+    text-decoration: none;
+  }
+
+#recent, #popular, #punditData {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  padding: 0 10px 10px;
+
+}
+  .panel h5 {
+    color: #333;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 -10px 10px;
+  }
+  .panel p {
+    text-align: center;
+    font-size: 14px;
+  }
+  .bio-img {
+    float: left;
+    max-width: 75px;
+    margin-right: 15px;
+  }
+
+  .option {
+    margin-top: 45px;
+  }
+  .option button {
+    border: none;
+    width: 30%;
+    margin: 0;
+    margin-right: 2%;
+    text-align: center;
+    font-weight: 300;
+    padding:10px 0;
+  }
+  .decline {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+  .accept {
+    background-color: #47a447;
+    border-color: #398439;
+    color: white;
+  }
+  
+  .growSupplier {
+    border-color: #357ebd;
+    background-color: #2399DA;
+    color: white;
+  }
+  .application {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  select {
+    height: 45px;
+    padding: 0px 12px;
+    border-radius: 0 !important;
+    -moz-appearance: button-bevel;
+    /* -webkit-appearance: initial; */
+    font-weight: 300;
+    border: 1px solid #ccc;
+    border-right: orange solid 7px;
+    position: relative;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-shadow: none !important;
+    color: #333 !important;
+    background-color: rgba(255, 255, 255, 0.72) !important;
+    margin-bottom: 10px;
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;    
+  }
+
+  #punditData select {
+    width:50%;
+  }
+    .supplierCategories select {
+      width: 100% !important;
+    }
+  .extract-btn {
+    background-color: #2399DA !important;
+    border: 1px solid #357ebd;
+    border-radius: 0 !important;
+    color: #fff;
+    transition: .2s ease-in-out;
+    height: 36px;
+    font-weight: 300;
+    float: right;
+    margin-top: 5px;
+    padding: 5px 10px;
+  }
+
+/* Search */
+#search select{
+  width: 100%;
+}
+
+.btn-1 {
+  background-color: #2399DA !important;
+  border: 1px solid #357ebd;
+  border-radius: 0 !important;
+  color: #fff;
+  transition: .2s ease-in-out;
+  height: 36px;
+  font-weight: 300;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+.link-1 {
+  color: #2399DA;
+  float: right;
+  margin-top: 15px;
+}
+
+#discover {
+  margin-top: 31px;
+}
+
+#punditScore {
+  padding: 20px 0 10px;
+  margin: 20px 0;
+  border-bottom: 5px dotted #eee;
+  border-top: 5px dotted #eee;
+}
+#punditScore .col-md-6:first-child {
+  font-size: 15px;
+  margin-bottom: 0 !important;
+  font-weight: 400;
+  font-style: italic;
+  opacity: .5;
+}
+#punditScore .col-md-6:nth-child(2) {
+  font-size: 15px;
+  margin-bottom: 0 !important;
+  font-weight: 600;
+  font-style: italic;
+  opacity: .5;
+  text-align: right;
+}
+
+.trusted {
+  float: right;
+}
+  .trusted img {
+    max-width: 40px;
+    margin-left: 10px;
+    padding: 2px;    
+  }
+.count {
+  margin-right: 40px !important;
+}
+  .count img {
+    max-width: 30px;
+  }
+.options-list {
+  margin-top: 45px;
+}
+.bio-name span {
+  font-weight: 500;
+}
+#applicationlist .bio-name {
+  padding-top: 10px;  
+}
+
+.btn-2 {
+  border: none;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  padding: 6px 10px;
+  color: white;
+  background: #47a447;
+}
+.btn-3 {
+  border: none;
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  padding: 6px 10px;
+  color: white;
+  background: #2399DA;
+}
+
+.btn-4 {
+  border: none;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 300;
+  padding: 5px 10px;
+  color: white;
+  background: #2399DA;
+}
+
+.list-supplier {
+  text-align: right;
+}
+
+#trustees {
+  margin-top: 20px;
+}
+  #trustees p span:first-child {
+    color: #00ABE5;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.95;
+  }
+  .trustCount {
+    background: #00ABE5;
+    color: white !important;
+    padding: 6px;
+    border-radius: 18px;
+    font-size: 12px !important;
+  }
+  #applicationList .application {
+    border-bottom: 1px dashed #AEAEAE;
+    padding: 20px 0 30px;
+  }
+
+/* ***************************** */ 
+/*          Home Style           */
+/* ***************************** */
+
+
+/* ***************************** */ 
+/*         Footer Style          */
+/* ***************************** */
+
+#footer {
+  background: #434848;
+  color: white;
+  font-weight: 300;
+  padding-top: 50px 15px 10px;
+}
+
+  #footer h1 {
+    text-align: left;
+    font-size: 24pt !important;
+    font-weight:300;
+    margin-bottom: 0 !important;
+  }
+
+  #footer li a {
+    font-size: 14px;
+    color: white !important;
+    text-decoration: none !important;
+    margin: 10px 0 !important;
+    display: inline-block;
+    font-weight: 100;
+  }
+    #footer .page-wrap>p {
+      text-align: right;
+      font-weight: 300;
+      color: #A6A6A6;
+    }
+      #footer .page-wrap>p>span {
+        color: white;
+      }
+
+  #footer p .fa {
+      font-size: 62px;
+      color: white;
+      padding: 5px;
+  }
+    .social-links {
+      margin-top: 15px;
+    }
+
+/* ***************************** */ 
+/*              MISC             */
+/* ***************************** */
+
+/* Animated Transitions */
+a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, button, button:active, button:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* ***************************** */ 
+/*        Media Querries         */
+/* ***************************** */
+
+@media screen and (max-width:768px) {
+  .navbar-brand>img {
+    max-width: 250px;
+  }
+  .navbar-brand p {
+    margin: -3px 0 0 0px;
+    font-size: 10px;
+  }
+  .navbar-toggle {
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
+    margin-right: 15px;
+  }
+  .icon-bar {
+    background: #27aae1;
+    border-radius: 0 !important;
+    width: 35px !important;
+    height: 4px !important;
+    margin-bottom: 5px;
+  }
+  #mainNav nav .navbar-right li a {
+    padding: 10px 15px !important;
+    font-size: 20px;
+    color: #777;
+    font-weight: 100;
+  }
+
+  /* Supplier */
+  #punditScore .col-md-6:nth-child(2) {
+    text-align:left;
+  }
+  #applicationlist .bio-name {
+    padding-top: 0px;
+  }
+  #applicationlist .options-list {
+    margin-top: 0px;
+  }
+  #applicationlist .btn-2 {
+    margin-top: 15px;
+  }
+  #applicationlist .list-supplier {
+    text-align:left;
+  }
+  .btn-2, .btn-3, .btn-4 {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  #footer .page-wrap>p {
+    text-align: left;
+    margin-left: 15px;
+  }
+
+}
+
+/* ***************************** */ 
+/*             Extras            */
+/* ***************************** */
+
+/* Under Construction */
+#underConstruction {
+  margin-top: 10%;
+  padding: 0 20px;
+}
+#underConstruction h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+#underConstruction h2 {
+  text-align: left;
+  padding: 10px;
+  background: #00ABE5;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 100;
+  width: 372px;
+}
+
+#underConstruction button {
+  background: none;
+  border: none;
+  color: #00ABE5;
+}
+
+@media screen and (max-width:767px) {
+  #underConstruction h2 {
+    width: 100%;
+  }
+  #underConstruction h1 {
+    font-size: 36px;
+  }
+  #underConstruction img {
+    margin-top: 40px;
+  }
+}

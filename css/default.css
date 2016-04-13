@@ -1,0 +1,154 @@
+/*  ********************************************   */
+/*          Theme Name:       CSS                  */
+/*          Description:                           */
+/*          Author: Adrian Manabat                 */     
+/*          Tags: Website, BACAS                   */
+/*  ********************************************   */
+
+/*  ******************************  */
+/*  -+-+-+-Table of Contents-+-+-+- */
+/*  1. Global Stye                  */
+/*  3. Navigation                   */
+/*  2. Class Calls                  */
+/*  3. Header Style                 */
+/*  4. Body Style                   */
+/*  4. Home Style                   */
+/*  5. Footer Style                 */
+/*  5. Misc                         */
+/*  5. Media Querries               */
+/*  5. Extras                       */
+/*  ******************************* */
+
+
+/* Fonts */
+
+
+
+/* ***************************** */ 
+/*          Global Style         */
+/* ***************************** */
+
+/* Sets Container to 100% Width */
+
+.container {
+  width:100% !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.row {
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+/* Removes Dotted Border on Elements in Mozilla */
+button::-moz-focus-inner, select::-moz-focus-inner, a::-moz-focus-inner {
+  border: 0 !important;
+  outline:none !important;
+}
+
+textarea:focus, input:focus, button:focus, select:focus, a:focus, button:active, select:active, a:active {
+    outline: none !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+}
+
+/* ***************************** */ 
+/*          Navigation           */
+/* ***************************** */
+
+/* Navigation Global */
+a, button, select {
+  cursor: pointer;
+}
+
+  a:hover, a:focus, button:hover, .light:hover, .dark:hover, select:hover{
+    text-decoration:none !important;
+    opacity:.85;
+    cursor: pointer;
+  }
+
+  button:active {
+    opacity:1;
+  }
+
+/* ***************************** */ 
+/*          Class Calls          */
+/* ***************************** */
+
+/* Hides Element */
+.show-none {
+  display:none !important;
+}
+
+/* Removes Padding */
+.rm-padding {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+/* Sets Max width to 1064px */
+.page-wrap {
+  max-width:1440px;
+  margin:0 auto !important;
+}
+
+/* Align Left */
+.left {
+  text-align:left;
+}
+
+/* Align Center */
+.center {
+  text-align:center;
+}
+
+/* Align Left */
+.right {
+  text-align:right;
+}
+
+/* ***************************** */ 
+/*         Header Style          */
+/* ***************************** */
+
+
+/* ***************************** */ 
+/*          Body Style           */
+/* ***************************** */
+
+
+/* ***************************** */ 
+/*          Home Style           */
+/* ***************************** */
+
+
+/* ***************************** */ 
+/*         Footer Style          */
+/* ***************************** */
+
+
+
+/* ***************************** */ 
+/*              MISC             */
+/* ***************************** */
+
+/* Animated Transitions */
+a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, button, button:active, button:hover {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* ***************************** */ 
+/*        Media Querries         */
+/* ***************************** */
+
+
+/* ***************************** */ 
+/*             Extras            */
+/* ***************************** */
+
+
+
+

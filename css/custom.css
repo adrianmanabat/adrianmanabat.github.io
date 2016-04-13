@@ -1,0 +1,541 @@
+/*  ********************************************   */
+/*          Theme Name:       CSS                  */
+/*          Description:                           */
+/*          Author: Adrian Manabat                 */     
+/*          Tags: Website, BACAS                   */
+/*  ********************************************   */
+
+/*  ******************************  */
+/*  -+-+-+-Table of Contents-+-+-+- */
+/*  1. Global Stye                  */
+/*  3. Navigation                   */
+/*  2. Class Calls                  */
+/*  3. Header Style                 */
+/*  4. Body Style                   */
+/*  4. Home Style                   */
+/*  5. Footer Style                 */
+/*  5. Misc                         */
+/*  5. Media Querries               */
+/*  5. Extras                       */
+/*  ******************************* */
+
+
+/* Fonts */
+@import url(//fonts.googleapis.com/css?family=Montserrat); - /* font-family: 'Montserrat', sans-serif; */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700); - /* font-family: 'Open Sans', sans-serif; */
+
+
+/* ***************************** */ 
+/*          Global Style         */
+/* ***************************** */
+
+/* Sets Container to 100% Width */
+
+html * {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.container, .container-fluid {
+  width:100% !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+.row {
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+/* Removes Dotted Border on Elements in Mozilla */
+button::-moz-focus-inner, select::-moz-focus-inner, a::-moz-focus-inner {
+  border: 0 !important;
+  outline:none !important;
+}
+
+textarea:focus, input:focus, button:focus, select:focus, a:focus, button:active, select:active, a:active {
+    outline: none !important;
+    box-shadow:none !important;
+    -webkit-box-shadow:none !important;
+}
+
+/* ***************************** */ 
+/*          Navigation           */
+/* ***************************** */
+
+/* Navigation Global */
+a, button, select {
+  cursor: pointer;
+}
+
+  a:hover, a:focus, button:hover, .light:hover, .dark:hover, select:hover{
+    text-decoration:none !important;
+    opacity:.85;
+    cursor: pointer;
+  }
+
+  button:active {
+    opacity:1;
+  }
+
+/* ***************************** */ 
+/*          Class Calls          */
+/* ***************************** */
+
+/* Hides Element */
+.show-none {
+  display:none !important;
+}
+
+/* Removes Padding */
+.rm-padding {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+/* Sets Max width to 1064px */
+.page-wrap {
+  max-width:1000px ;
+  margin:0 auto !important;
+}
+
+/* Align Left */
+.left {
+  text-align:left;
+}
+
+/* Align Center */
+.center {
+  text-align:center;
+}
+
+/* Align Left */
+.right {
+  text-align:right;
+}
+
+/* ***************************** */ 
+/*         Header Style          */
+/* ***************************** */
+
+#heading .page-wrap {
+  max-width:100% !important;
+}
+  #heading a img {
+    float: right;
+    padding: 40px 120px 0 0;
+  }
+#headerLinks {
+  background: #363d43;
+  padding: 40px 0 10px;
+}
+  #headerLinks a {
+    font-size:13px;
+    color: white;
+  }
+    #headerlinks a:hover, #headerlinks a:focus, #headerlinks a:active {
+      color: #1dbecf !important;
+    }
+
+
+/* ***************************** */ 
+/*          Body Style           */
+/* ***************************** */
+
+
+h4 {
+  color: #faa61a;
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top:10px;
+}
+
+h3 a {
+  color: #fefefe;
+  font-weight: 400;
+  font-size: 25px;  
+}
+  h3 a:hover, h3 a:focus, h3 a:active {
+    color: #fefefe !important;
+  }
+
+h6 {
+  font-size: 14px;
+  color: #919496;
+  margin-top: 30px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+  color: #fefefe;
+}
+
+a {
+  color: #1dbecf;
+}
+  a:hover, a:focus, a:active {
+    color: inherit !important;
+  }
+
+li {
+  list-style-type: none;
+}
+
+#carousel .page-wrap {
+  max-width: 100%;
+}
+
+#carousel .item {
+  height: 450px;
+}
+
+#carousel .item img {
+  width: 2046px;
+  max-width: 2046px !important;
+  overflow: hidden;
+  left: 50%;
+  position: absolute;
+  margin-left: -1023px;  
+}
+  .carousel-control {
+    background: none !important;
+    opacity: 1;
+    display:none; 
+  }
+  .carousel-control .glyphicon {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+  }
+.carousel-indicators {
+  text-align: left;
+}
+
+.page-wrap-absolute {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  max-width: 1000px;
+  z-index: 5;
+}
+  .page-wrap-absolute h2 {
+    color: white;
+    max-width: 50%;
+    margin-top: 100px;
+    background: rgba(0,0,0,.55);
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    letter-spacing: .5;
+  }
+
+#news {
+  background: url('../img/bg-repeat.png') center top #4a5056;
+}
+#left {
+  padding: 60px 20px 0 20px;
+}
+  #left h4 {
+    margin-left:10px;
+  }
+
+/* What's New */
+.article {
+  max-width: 46%;
+  padding: 2%;
+  float: left;
+}
+
+.readMore-btn {
+  background-color: #1dbecf;
+  color: #383C44;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;  
+}
+  .readMore-btn:hover {
+    background-color: #383C44;
+    color: #1dbecf !important;
+  }
+
+.box h5 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.about {
+  background: url('../img/about-bg.png') bottom no-repeat;
+  background-color: #1dbecf;
+  height: 250px;
+  padding-top: 90px;
+  text-align: center;
+}
+  .about:hover,.faqs:hover,.links:hover {
+    opacity:.5;
+  }
+.faqs {
+  background: url('../img/faqs-bg.png') bottom no-repeat;
+  background-color: #ed0c6e;
+  height: 250px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.links {
+  background: url('../img/links-bg.png') top no-repeat;
+  background-color: #faa61a;
+  height: 250px;
+  padding-top: 90px;
+  text-align: center;
+}
+
+/* Join */
+.signIn {
+  padding: 20px 20px 40px;
+}
+  .signIn input {
+    background: rgba(255,255,255,.4);
+    border: none;
+    color: #D9D9D9;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    height: 41px;
+    padding: 5px 5px 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+  }
+#password {
+  margin-bottom: 10px;
+}
+  .notReg-btn:hover {
+    color: #faa61a !important;
+  }
+
+.signIn-btn {
+  background-color: #faa61a;
+  color: #0d0e10;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 0;
+  float: right;
+}
+  .signIn-btn:hover {
+    background-color: #0d0e10;
+    color: #faa61a !important;    
+  }
+
+#opportunities {
+  padding: 20px;
+}
+  #opportunities p {
+    font-size: 14px;
+  }
+    #opportunities p span {
+      font-weight: 600;
+    }
+
+/* Register */
+#register {
+  padding: 60px;
+  text-align: center;
+  background: url('../img/bg3.jpg')no-repeat fixed center;
+  background-size: cover !important;
+}
+  #register button {
+    background-color: #ed0c6e;
+    border:0;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border: 0;
+    opacity: .85;
+    cursor: pointer;
+  }
+    #register button:hover, #register button:focus, #register button:active {
+      color:#ed0c6e !important;
+      background-color: white !important;
+      opacity:.7;
+    }
+/* ***************************** */ 
+/*          Home Style           */
+/* ***************************** */
+
+
+/* ***************************** */ 
+/*         Footer Style          */
+/* ***************************** */
+
+#footer {
+  background-color: #0d0e10;
+  padding: 60px 0;
+  margin: 0;
+  color: #a9abad;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+  #footer ul {
+    float: left;
+    list-style: none;
+    margin: 0 130px 0 0;
+    padding: 0;
+  }
+    #footer ul li a {
+      color: #919496;
+    }
+      #footer ul li a:hover, #footer ul li a:focus, #footer ul li a:active {
+        color:white !important;
+      }
+  #footer img {
+    padding-left: 20px;
+  }
+
+  #footer .col-lg-5 {
+    text-align:right;
+  }
+    #footer .col-lg-5 p {
+      color: #919496;
+      font-weight: 300;
+      margin-top: 40px;
+    }
+      #footer .col-lg-5 p span {
+        font-weight:400;
+        color: white;
+      }
+
+/* ***************************** */ 
+/*              MISC             */
+/* ***************************** */
+
+/* Animated Transitions */
+a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, button, button:active, button:hover ,.about:hover,.faqs:hover,.links:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ***************************** */ 
+/*        Media Querries         */
+/* ***************************** */
+
+@media screen and (max-width:991px) {
+  #heading a img {
+    padding: 40px 10px 0 0 !important;
+  }
+}
+@media screen and (max-width:768px) {
+  #heading a img {
+    float: none;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 350px;
+  }
+  #heading ul {
+    padding-left: 5px;
+  }
+
+  .page-wrap-absolute h2 {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+    font-size: 22px;
+    letter-spacing: .5;    
+  }
+
+  /* Navbar */
+  #mobileNavbar .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .navbar-inverse {
+    background-color: white;
+    border-color: none;
+    border: none;
+    height: auto !important;
+    margin-bottom: 0;
+  }
+  .navbar-brand {
+    padding: 0;
+    height: auto !important;
+  }
+    .navbar-brand img {
+      max-width: 290px;
+      padding: 15px;
+    }
+    .nav.navbar-nav {
+      background: #363d43;
+      margin-top: 0;
+    }
+      .nav.navbar-nav li a {
+        color: white !important;
+      }
+  .navbar-toggle {
+    border: none !important;
+    margin: 0;
+    padding: 10px;
+    margin-top: 18px;
+    margin-right: 5px;
+  }
+    .navbar-toggle:hover, .navbar-toggle:focus, .navbar-toggle:active {
+      background: none !important
+    }
+    .icon-bar {
+      background: #363d43 !important;
+      border-radius: 0;
+      width: 36px !important;
+      height: 5px !important;
+    }
+
+  /* Carousel */
+  #carousel .item {
+    height: 300px;
+  }
+    #carousel .item img {
+      width: 1024px;
+      max-width: 1024px !important;
+      margin-left: -512px;
+    }
+
+  /* News */
+  #news {
+    background: #4a5056 !important;
+  }
+  #left {
+    padding: 40px 20px;
+  }
+  #right {
+    background: #363d43;
+  }
+
+  /* Register */
+  #register button {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  #footer .col-lg-5 {
+    text-align: left;
+  }
+  #footer img {
+    padding-left: 0;
+    padding-right:20px;
+  }
+
+
+}
+/* ***************************** */ 
+/*             Extras            */
+/* ***************************** */
+
+
+
+
