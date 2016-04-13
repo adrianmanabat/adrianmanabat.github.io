@@ -479,7 +479,6 @@ ul li {
   #trustees p span:first-child {
     color: #00ABE5;
     font-size: 18px;
-    text-transform: uppercase;
     line-height: 1.95;
   }
   .trustCount {
