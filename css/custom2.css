@@ -402,6 +402,8 @@ p {
     padding: 5px 10px;
   }
 
+
+
 /* Search */
 #search select{
   width: 100%;
@@ -425,7 +427,7 @@ p {
   margin-top: 15px;
 }
   .link-1:hover {
-    color: #47a447 !important;
+    text-decoration: underline;
   }
 
 #discover {
