@@ -266,6 +266,7 @@
 
   <!-- For Pie Chart -->
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!--
   <script type="text/javascript">
 
     // Load Charts and the corechart and barchart packages.
@@ -304,6 +305,104 @@
       var barchart = new google.visualization.ColumnChart(document.getElementById('barchart_div'));
       barchart.draw(data, barchart_options);
     }
+</script>
+-->
+
+<script type="text/javascript">
+
+  // Load Charts and the corechart package.
+  google.charts.load('current', {'packages':['corechart']});
+
+  // Draw the pie chart for Piechart when Charts is loaded.
+  google.charts.setOnLoadCallback(drawPieChart);
+
+  // Draw the pie chart for the Barchart when Charts is loaded.
+  google.charts.setOnLoadCallback(drawBarChart);
+
+  // Draw the pie chart for the Linechart when Charts is loaded.
+  google.charts.setOnLoadCallback(drawLineChart);
+
+
+  // Callback that draws the pie chart for Sarah's pizza.
+  function drawPieChart() {
+
+    // Create the data table for Sarah's pizza.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Construction and facilities maintenance', 12],
+      ['Professional and ICT Services', 9],
+      ['Social Enterprises', 20],
+      ['Manufacturing', 27],
+      ['Administration & Support', 16],
+      ['Health Care & Social Assistance', 11],
+      ['Waste collection, treatment & disposal', 5]
+    ]);
+
+    // Set options for Sarah's pie chart.
+    var options = {title:'Procurement by Category',
+                   width:320,
+                   height:300};
+
+    // Instantiate and draw the chart for Sarah's pizza.
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
+    chart.draw(data, options);
+  }
+
+  // Callback that draws the pie chart for Anthony's pizza.
+  function drawBarChart() {
+
+    // Create the data table for Sarah's pizza.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Construction and facilities maintenance', 22],
+      ['Professional and ICT Services', 80],
+      ['Social Enterprises', 33],
+      ['Manufacturing', 50],
+      ['Administration & Support', 60],
+      ['Health Care & Social Assistance', 12],
+      ['Waste collection, treatment & disposal', 8]
+    ]);
+
+    // Set options for Anthony's pie chart.
+    var options = {title:'Suppliers by Category',
+                   width:320,
+                   height:300};
+
+    // Instantiate and draw the chart for Sarah's pizza.
+    var chart = new google.visualization.ColumnChart(document.getElementById('barchart_div'));
+    chart.draw(data, options);
+  }
+
+  // Callback that draws the pie chart for Anthony's pizza.
+  function drawLineChart() {
+
+    // Create the data table for Sarah's pizza.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Topping');
+    data.addColumn('number', 'Slices');
+    data.addRows([
+      ['Construction and facilities maintenance', 22],
+      ['Professional and ICT Services', 80],
+      ['Social Enterprises', 33],
+      ['Manufacturing', 50],
+      ['Administration & Support', 60],
+      ['Health Care & Social Assistance', 12],
+      ['Waste collection, treatment & disposal', 8]
+    ]);
+
+    // Set options for Anthony's pie chart.
+    var options = {title:'Line by Category',
+                   width:320,
+                   height:300};
+
+    // Instantiate and draw the chart for Sarah's pizza.
+    var chart = new google.visualization.LineChart(document.getElementById('linechart_div'));
+    chart.draw(data, options);
+  }
 </script>
 
   </body>
