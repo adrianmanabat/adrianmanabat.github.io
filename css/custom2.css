@@ -434,6 +434,11 @@ p {
   margin-top: 31px;
 }
 
+/* Charts */
+#linechart_div,#piechart_div,#barchart_div {
+  padding:5px;
+}
+
 #punditScore {
   padding: 20px 0 10px;
   margin: 20px 0;
