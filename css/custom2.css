@@ -424,6 +424,9 @@ p {
   float: right;
   margin-top: 15px;
 }
+  .link-1:hover {
+    color: #47a447 !important;
+  }
 
 #discover {
   margin-top: 31px;
@@ -620,6 +623,12 @@ a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, bu
 /* ***************************** */ 
 /*        Media Querries         */
 /* ***************************** */
+
+@media screen and (min-width:769px) {
+  .panel h5 {
+    height:54px;
+  }
+}
 
 @media screen and (max-width:768px) {
   .navbar-brand>img {
