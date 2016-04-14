@@ -24,6 +24,12 @@
 
 @import url(//fonts.googleapis.com/css?family=Roboto:400,500,700,100,300);/* font-family: 'Roboto', sans-serif; */
 
+/* Gotham Font */
+@font-face {
+  font-family: 'gothamlight';
+  src: url('fonts/gothamlight.ttf');
+}
+
 /* ***************************** */ 
 /*          Global Style         */
 /* ***************************** */
@@ -31,7 +37,11 @@
 /* Sets Container to 100% Width */
 
 html * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'gothamlight', sans-serif;
+}
+
+body {
+  background: #4a5056;
 }
 
 .container-fluid{
@@ -115,7 +125,8 @@ a, button, select {
 /* ***************************** */
 
 #mainNav nav {
-  background-color: rgba(255, 255, 255, .9) !important;
+  background-color: rgba(255, 255, 255, .95) !important;
+  border-bottom:none;
 }
   #mainNav nav .navbar-right li a {
     padding: 40px 16px !important;
@@ -165,11 +176,11 @@ a, button, select {
     padding: 5px 0;
   }
   #bottomNav a {
-    color: rgba(255,255,255,.9);
+    color: rgba(255,255,255,.9) !important;
     background: #1F7CA6;
     padding: 8px 10px;
     font-weight: 400;
-    text-transform: uppercase;
+    letter-spacing: .5px;
     font-size: 12px;
     border-radius: 3px;
     margin-left: 10px;
@@ -192,10 +203,21 @@ a, button, select {
   margin-top: 150px;
   padding: 40px 0;
 }
+
+.supplierDashboard {
+  background: white;
+  border-radius: 5px;
+}
+
+#dashboard {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 /* Profile */
 .name {
   font-size: 24px;
-  font-weight: bold;
+  color: white;
+  font-weight: 400;
 }
 
 .profilePicture {
@@ -227,9 +249,10 @@ h4 {
   border-bottom: 1px solid #ddd;
   color: #00ABE5;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   background-color: white;
   font-weight: 400;
+  margin-top: -5px;
 }
 
 ul {
@@ -240,6 +263,14 @@ ul {
 ul li {
   list-style-type: none;
   margin-left: 0;
+}
+
+a {
+  color: #1dbecf !important;
+}
+
+p {
+  color: #919496 !important;
 }
 
 .options i {
@@ -263,7 +294,11 @@ ul li {
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
   padding: 20px 0;
   margin: 20px 0;
+  background: white;
 }
+  #recent h5 {
+    font-weight: 600;
+  }
 
 .panel {
   margin-bottom: 20px;
@@ -299,6 +334,7 @@ ul li {
   }
   .option button {
     border: none;
+    border-radius: 5px;
     width: 30%;
     margin: 0;
     margin-right: 2%;
@@ -441,6 +477,7 @@ ul li {
 
 .btn-2 {
   border: none;
+  border-radius:5px;
   margin: 0;
   text-align: center;
   font-weight: 300;
@@ -450,6 +487,7 @@ ul li {
 }
 .btn-3 {
   border: none;
+  border-radius:5px;
   margin: 0;
   text-align: center;
   font-weight: 300;
@@ -476,10 +514,22 @@ ul li {
 #trustees {
   margin-top: 20px;
 }
-  #trustees p span:first-child {
+.hr-line {
+  width: 100%;
+  border-top: 1px dashed gainsboro;
+  margin-top: -25px;
+  margin-top: -30px;
+}
+  #trustees p>span:first-child {
     color: #00ABE5;
     font-size: 18px;
-    line-height: 1.95;
+    line-height: 2.3;
+    background: white;
+    border-right: 10px solid white;
+  }
+  .trusted {
+    background: white;
+    border-left: 10px solid white;
   }
   .trustCount {
     background: #00ABE5;
@@ -489,9 +539,22 @@ ul li {
     font-size: 12px !important;
   }
   #applicationList .application {
-    border-bottom: 1px dashed #AEAEAE;
-    padding: 20px 0 30px;
+    border-bottom: 1px dashed gainsboro;
+    padding: 30px 0 30px;
+    margin: 0 !important;
   }
+    #applicationList .application:nth-child(odd) {
+      background-color: whitesmoke;
+      border-bottom: 1px dashed gainsboro;
+    }
+      #applicationList .application:nth-child(odd) #trustees p>span:first-child {
+        background: whitesmoke;
+        border-right: 10px solid whitesmoke;
+      }
+      #applicationList .application:nth-child(odd) .trusted {
+        background: whitesmoke;
+        border-left: 10px solid whitesmoke;
+      }
 
 /* ***************************** */ 
 /*          Home Style           */
