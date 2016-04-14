@@ -300,6 +300,10 @@ p {
     font-weight: 600;
   }
 
+#popular h5 {
+  padding-top: 10px 5px !important;
+}
+
 .panel {
   margin-bottom: 20px;
   background-color: #fff;
