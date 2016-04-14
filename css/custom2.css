@@ -431,7 +431,7 @@ p {
   margin-top: 15px;
 }
   .link-1:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 
 #discover {
