@@ -521,7 +521,7 @@ background-image:
     max-width: 30px;
   }
 .options-list {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 .bio-name span {
   font-weight: 500;
@@ -690,7 +690,7 @@ a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, bu
 
   }
   .count {
-    margin: 25px 0;
+    margin: 10px 0;
   }
 }
 
