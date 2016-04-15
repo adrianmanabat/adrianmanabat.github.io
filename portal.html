@@ -345,7 +345,8 @@
 
     // Set options for Sarah's pie chart.
     var options = {title:'Procurement by Category',
-                   width:320,
+                  'legend':'bottom',
+                   width:319,
                    height:300};
 
     // Instantiate and draw the chart 
@@ -372,7 +373,8 @@
 
     // Set options 
     var options = {title:'Suppliers by Category',
-                   width:320,
+                  'legend':'bottom',
+                   width:319,
                    height:300};
 
     // Instantiate and draw the chart
@@ -386,8 +388,8 @@
 
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Month');
-    data.addColumn('number', 'Average quote');
-    data.addColumn('number', 'Average job');
+    data.addColumn('number', 'Quotes');
+    data.addColumn('number', 'Jobs');
     data.addRows([
       ['May-16', 35000, 33000],
       ['Jun-16', 45000, 44000],
@@ -408,7 +410,8 @@
 
 
     var options = {title:'Average quote vs average job',
-                   width:320,
+                  'legend':'bottom',
+                   width:319,
                    height:300};
 
     var chart = new google.visualization.LineChart(document.getElementById('linechart_div'));

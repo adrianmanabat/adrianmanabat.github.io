@@ -202,6 +202,13 @@ a, button, select {
 /*          Body Style           */
 /* ***************************** */
 
+#avatar a {
+  color: white !important;
+}
+  #avatar a:hover {
+    color: #1dbecf !important;
+  }
+
 #profile {
   margin-top: 150px;
   padding: 40px 0;
