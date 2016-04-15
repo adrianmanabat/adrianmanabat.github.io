@@ -282,7 +282,7 @@
 
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Topping');
-      data.addColumn('number', 'Slices');
+      data.addColumn('number', 'Suppliers');
       data.addRows([
         ['Test 1', 2],
         ['Test 2', 5],
@@ -326,13 +326,13 @@
   google.charts.setOnLoadCallback(drawLineChart);
 
 
-  // Callback that draws the pie chart for Sarah's pizza.
+  // Callback that draws the pie chart 
   function drawPieChart() {
 
-    // Create the data table for Sarah's pizza.
+    // Create the data table for pie chart.
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Topping');
-    data.addColumn('number', 'Slices');
+    data.addColumn('number', 'Suppliers');
     data.addRows([
       ['Construction and facilities maintenance', 12],
       ['Professional and ICT Services', 9],
@@ -348,18 +348,18 @@
                    width:320,
                    height:300};
 
-    // Instantiate and draw the chart for Sarah's pizza.
+    // Instantiate and draw the chart 
     var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
     chart.draw(data, options);
   }
 
-  // Callback that draws the pie chart for Anthony's pizza.
+  // Callback for Bar Chart
   function drawBarChart() {
 
-    // Create the data table for Sarah's pizza.
+    // Create the data table for columnchart
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Topping');
-    data.addColumn('number', 'Slices');
+    data.addColumn('number', 'Suppliers');
     data.addRows([
       ['Construction and facilities maintenance', 22],
       ['Professional and ICT Services', 80],
@@ -370,12 +370,12 @@
       ['Waste collection, treatment & disposal', 8]
     ]);
 
-    // Set options for Anthony's pie chart.
+    // Set options 
     var options = {title:'Suppliers by Category',
                    width:320,
                    height:300};
 
-    // Instantiate and draw the chart for Sarah's pizza.
+    // Instantiate and draw the chart
     var chart = new google.visualization.ColumnChart(document.getElementById('barchart_div'));
     chart.draw(data, options);
   }
