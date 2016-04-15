@@ -281,7 +281,6 @@ p {
 }
   .punditScore p span {
     font-size: 14px;
-    font-weight: 600;
   }
 
 progress[value] {
@@ -524,6 +523,7 @@ background-image:
   }
   .countScore {
     margin-top: 15px;
+    font-weight: 600;
   }
   .count img {
     max-width: 30px;
