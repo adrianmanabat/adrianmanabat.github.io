@@ -265,7 +265,7 @@ h4 {
   margin-top: -5px;
 }
 
-.ltr {
+#linechart_div>div>div:first-child, #barchart_div>div>div:first-child, #piechart_div>div>div:first-child {
     margin: 0 auto !important; 
 }
 
