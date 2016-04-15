@@ -276,6 +276,13 @@ p {
   color: #919496 !important;
 }
 
+.punditScore p {
+  margin-bottom: 5px;
+}
+  .punditScore p span {
+    font-size: 14px;
+  }
+
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
@@ -283,7 +290,7 @@ progress[value] {
   appearance: none;
   border: none;
   width: 100%;
-  height: 20px; 
+  height: 15px; 
 }
 progress[value]::-webkit-progress-bar {
   background-color: transparent;
