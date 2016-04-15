@@ -276,6 +276,30 @@ p {
   color: #919496 !important;
 }
 
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  appearance: none;
+  border: none;
+  width: 100%;
+  height: 20px; 
+}
+progress[value]::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress[value]::-webkit-progress-value {
+background-image: 
+    -webkit-linear-gradient( 0deg, transparent 15%,
+    rgba(0, 0, 0, .1) 15%,
+    rgba(0,0, 0, .1) 70%, transparent 70%),
+    -webkit-linear-gradient(top, transparent, transparent),
+    -webkit-linear-gradient(left, #d9534f, #47a447);
+    border-radius: 0;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
 .options i {
   min-width: 30px;
 }
@@ -477,13 +501,27 @@ p {
     padding: 2px;    
   }
 .count {
-  margin-right: 40px !important;
 }
+  .fa-certificate {
+    color: #2399DA;
+    font-size: 60px !important;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-left: 10px;
+  }
+  .countNumb {
+    color: white !important;
+    margin-top: -44px;
+    font-size: 18px;
+    margin-left: 25px;
+  }
+  .countScore {
+    margin-top: 15px;
+  }
   .count img {
     max-width: 30px;
   }
 .options-list {
-  margin-top: 45px;
+  margin-top: 35px;
 }
 .bio-name span {
   font-weight: 500;
@@ -493,24 +531,29 @@ p {
 }
 
 .btn-2 {
-  border: none;
-  border-radius:5px;
-  margin: 0;
-  text-align: center;
+  border-radius: 5px !important;
+  color: #fff;
+  transition: .2s ease-in-out;
+  height: 36px;
   font-weight: 300;
-  padding: 6px 10px;
-  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 5px 10px;
   background: #47a447;
+  border: 1px solid #47a447;
+
 }
 .btn-3 {
-  border: none;
-  border-radius:5px;
-  margin: 0;
-  text-align: center;
+  border-radius: 5px !important;
+  color: #fff;
+  transition: .2s ease-in-out;
+  height: 36px;
   font-weight: 300;
-  padding: 6px 10px;
-  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 5px 10px;
   background: #2399DA;
+  border: 1px solid #2399DA;
 }
 
 .btn-4 {
@@ -646,6 +689,9 @@ a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, bu
   .panel h5 {
 
   }
+  .count {
+    margin: 25px 0;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -687,7 +733,6 @@ a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, bu
     margin-top: 0px;
   }
   #applicationlist .btn-2 {
-    margin-top: 15px;
   }
   #applicationlist .list-supplier {
     text-align:left;
@@ -695,7 +740,6 @@ a, a:hover, input, .light:hover, .dark:hover, .span2, p, p:hover, .glyphicon, bu
   .btn-2, .btn-3, .btn-4 {
     width: 100%;
     margin-bottom: 10px;
-    padding: 10px;
   }
   #footer .page-wrap>p {
     text-align: left;
